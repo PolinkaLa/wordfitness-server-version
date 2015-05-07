@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://localhost:8084/WordFitness/ -->
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta name="author" content="Алексеев, Ершова, Лаппо, Плонина">
+        <meta name="description" content="Сайт для изучения иностранных слов">
+        <meta charset="UTF-8">
+        <title>Wordfitness</title>
+        <link href="css/WF.css" rel="stylesheet">
+        <script src="./index_files/jquery-1.10.1.min.js"></script>
+        <script src="./index_files/js.js"></script>
+    </head>
+    <body>
+        <a href="http://localhost:8084/WordFitness/#" class="button-login">ВОЙТИ</a>
+        <a href="http://localhost:8084/WordFitness/#" class="button-registration">РЕГИСТРАЦИЯ</a>
+        <a href="http://localhost:8084/WordFitness/index.html">
+            <div id="logo">
+                <div id="titl"></div>
+            </div>
+        </a>
+        <div class="line"></div>
+    <center>
+        <div id="map"></div>
+    </center>
+
+    <div class="popup1">
+        <form>
+            <center>
+                <a class="close" href="./index_files/index.html"><img src="./index_files/close.png" alt="Закрытие"></a>
+                <p><b>Авторизуйся на WordFitness!</b><br><br>
+
+                    <input type="email" name="mail" placeholder="Email" autofocus="" required=""><br><br>
+                    <input type="password" name="password" placeholder="Пароль" required=""><br>
+                    <a href="http://localhost:8084/WordFitness/#" class="recovery"> Забыли пароль?</a> 
+                    <br><br><br>
+                    
+                <button type="submit" class="button1" name="action" value="login">ВОЙТИ</button>
+
+                </p>
+            </center>
+        </form>
+    </div>
+    <div class="parent_popup2"></div>
+
+    <div class="popup2">
+        <a class="close" href="./index_files/index.html"><img src="./index_files/close.png" alt="Закрытие"></a>
+        <center>
+            <p>
+                <b>Зарегистрируйся на на WordFitness бесплатно!</b><br><br>
+            </p><form method="POST">
+                <input type="hidden" name="action" value="registration">
+                <input type="text" name="SecondName" placeholder="Фамилия" required="" autofocus="">
+                <input type="text" name="Name" placeholder="Имя" required=""><br><br>
+                <input type="email" name="EMail" placeholder="Email" required="">
+                <input type="tel" name="Phone" placeholder="Phone"><br><br>
+                <input type="password" name="Password" placeholder="Пароль" required="">
+                <input type="password" placeholder="Повтори пароль" required=""><br><br>
+                Укажи дату рождения
+                <input type="date"><br><br><br>
+                <button class="button2">Зарегистрироваться</button>
+            </form>
+            <p></p>
+        </center>
+    </div>
+    <div class="parent_popup2"></div>
+
+    <div class="recovery-password">
+        <center>
+            <a class="close" href="http://localhost:8084/WordFitness/WordFitness.html">
+                <img src="./index_files/close.png" alt="Çàêðûòèå"></a>
+            <p> <b>Введите Ваш email:</b>
+                <br>
+                <br>
+                <input type="email" placeholder="Email" autofocus="" required="">
+                <br>
+                <br>
+                На указанный почтовый ящик будет выслано письмо с дальнейшими инструкциями
+                <br>
+                <br>
+
+            </p>
+
+            <button class="button1">Восстановить</button>
+
+            <p></p>
+        </center>
+    </div>
+
+
+</body></html>

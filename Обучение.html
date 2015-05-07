@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://localhost:8084/WordFitness/LearningMode -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Обучение</title>
+        <link href="css/WF.css" rel="stylesheet">
+        <script src="./Обучение_files/jquery-1.10.1.min.js"></script>
+        <script src="./Обучение_files/js.js"></script>
+    </head>
+    <body>
+
+        <!--wf:HiddenWordsFormTag userWordIds="" dictionaryId="27"/-->
+        <form method="post">
+            <input type="hidden" name="idOfChoosenWords" value="1">
+            <input type="hidden" name="dictionaryId" value="27">
+            <button id="btWordToTranslate" class="invisible" formaction="/WordFitness/WordToTranslate" name="action" value="wordToTranslateStart"></button>
+            <button id="btTranslateToWord" class="invisible" formaction="/WordFitness/TranslateToWord" name="action" value="translateToWordStart"></button>
+            <button id="btWordToTranslateOptions" class="invisible" formaction="/WordFitness/WordToTranslateOptions" name="action" value="wordToTranslateOptionsStart"></button>
+        </form>
+
+        <a href="http://localhost:8084/WordFitness/index.html">
+            <div id="logo">
+                <div id="titl"></div>
+            </div></a>
+        <div class="line"></div>  
+        <div class="profile">
+            <div id="avatar"></div>
+            <div id="avatar_txt"> 
+                Hello, Андрей!<br><br>
+                Уровень : 0<br>
+            </div>
+        </div>
+        <a href="http://localhost:8084/WordFitness/index.html" class="button-exit">ВЫЙТИ</a>
+        <a href="http://localhost:8084/WordFitness/mypage.html" class="button-mypage">МОЙ ПРОФИЛЬ</a>
+
+        <div class="menu">
+            <div class="lines l1"></div> 
+            <a href="http://localhost:8084/WordFitness/Main" class="button button-menu">ГЛАВНОЕ МЕНЮ</a> 
+            <div class="lines l2"></div> 
+            <a href="http://localhost:8084/WordFitness/Translater" class="button button-tran">ПЕРЕВОДЧИК</a> 
+            <div class="lines l3"></div>
+            <a href="http://localhost:8084/WordFitness/DictionaryList" class="button button-slov">СЛОВАРИ</a> 
+            <div class="lines l4"></div>
+            <a href="http://localhost:8084/WordFitness/ArticleList/0" class="button button-text">ТЕКСТЫ</a> 
+            <div class="lines l5"></div>
+            <a href="javascript:history.back()" class="button button-back">НАЗАД</a>
+        </div>
+
+
+    <center>
+
+        <h1 class="p"><p><b>Режимы обучения  </b> </p> </h1> 
+
+
+        <div class="tabwidth">
+            <b>Выберите один из следующих режимов обучения</b><br>
+                или у знайте больше об этих режимах <br><a href="http://localhost:8084/WordFitness/%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D1%8F.html"><img src="./Обучение_files/question.png" alt="Гид по режимам обучения"></a><table border="0" cellpadding="5" cellspacing="10">
+
+                
+                
+                <tbody><tr>
+                    <td height="75" width="33%" bgcolor="#D3EDF6" valign="top" align="center" class="rollover tleft">
+                        <label for="btWordToTranslate">
+                            <div class="r1">
+                                <b><br>Слово-перевод</b>
+                            </div>
+                        </label>
+                    </td>
+
+
+                    <td height="75" width="33%" bgcolor="#D3EDF6" valign="top" align="center" class="rollover">
+                        <label for="btTranslateToWord">
+                            <div class="r1">
+                                <br><b>Перевод-слово</b>
+                            </div>		
+                        </label>
+                    </td>
+
+
+                    <td height="75" width="33%" bgcolor="#D3EDF6" valign="top" align="center" class="rollover tright">
+                        <label for="btWordToTranslateOptions">
+                            <div class="r1">
+                                <b><br>Слово-варианты перевода</b>
+                            </div>
+                        </label>
+                    </td>
+
+                </tr>
+                <tr class="no-background">
+                    <td height="40" width="33%" align="center">
+                        <img src="./Обучение_files/arrow2.png" height="40" alt="стрелка"></td>
+
+                    <td height="40" width="33%" align="center">
+                        <img src="./Обучение_files/arrow2.png" height="40" alt="стрелка"></td>
+
+                    <td height="40" width="33%" align="center">
+                        <img src="./Обучение_files/arrow2.png" height="40" alt="стрелка"></td>
+                </tr>
+                <tr>
+                    <td width="33%" valign="top" bgcolor="#ffffff" align="center" class="nleft">
+                        <p style="margin-left: 10px; margin-right: 10px">
+                            На странице поочередно будут отображаться английские слова. Вам необходимо ввести русскоязычный перевод.
+                        </p></td>
+
+                    <td width="33%" valign="top" bgcolor="#ffffff" align="center">
+                        <p style="margin-left: 10px; margin-right: 10px">
+                            На странице поочередно будет отображаться русскоязычный перевод слова. 
+                            В этот момент Вы должны предположить какое это могло быть слово. Затем, по нажатию, отобразится 
+                            соответствующее переводу слово. Далее Вам предлагается самостоятельно 
+                            оценить насколько Ваш ответ совпадает с реальным. 
+                        </p></td>
+
+
+                    <td width="33%" valign="top" bgcolor="#ffffff" align="center" class="nright">
+                        <p style="margin-left: 10px; margin-right: 10px">
+                            На странице поочередно будут отображаться английские слова. Вам необходимо выбрать правильный на Ваш взгляд русскоязычный перевод.
+                        </p></td>
+                </tr>
+
+            </tbody></table> 
+        </div>
+
+
+        <p>
+
+    </p></center>
+
+</body></html>

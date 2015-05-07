@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://localhost:8084/WordFitness/Dictionary/27 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+        <meta name="author" content="Алексеев, Ершова, Лаппо, Плонина"> 
+        <meta name="description" content="Сайт для изучения иностранных слов"> 
+        <meta charset="UTF-8">
+
+
+        <title>Сайт для изучения иностранных слов.</title>
+        <link href="css/WF.css" rel="stylesheet">
+        <script src="./Словарь_files/jquery-1.10.1.min.js"></script>
+        <script src="./Словарь_files/js.js"></script>
+
+    </head>
+    <body>
+
+
+        <a href="http://localhost:8084/WordFitness/Dictionary/index.html">
+            <div id="logo">
+                <div id="titl"></div>
+            </div></a>
+        <div class="line"></div>  
+        <div class="profile">
+            <div id="avatar"></div>
+            <div id="avatar_txt"> 
+                Hello, Андрей!<br><br>
+                Уровень : 0<br>
+            </div>
+        </div>
+        <a href="http://localhost:8084/WordFitness/Dictionary/index.html" class="button-exit">ВЫЙТИ</a>
+        <a href="http://localhost:8084/WordFitness/Dictionary/mypage.html" class="button-mypage">МОЙ ПРОФИЛЬ</a> 
+
+
+        <div class="menu">
+            <div class="lines l1"></div> 
+            <a href="http://localhost:8084/WordFitness/Main" class="button button-menu">ГЛАВНОЕ МЕНЮ</a> 
+            <div class="lines l2"></div> 
+            <a href="http://localhost:8084/WordFitness/Translater" class="button button-tran">ПЕРЕВОДЧИК</a> 
+            <div class="lines l3"></div>
+            <a href="http://localhost:8084/WordFitness/DictionaryList" class="button button-slov">СЛОВАРИ</a> 
+            <div class="lines l4"></div>
+            <a href="http://localhost:8084/WordFitness/ArticleList/0" class="button button-text">ТЕКСТЫ</a> 
+            <div class="lines l5"></div>
+            <a href="javascript:history.back()" class="button button-back">НАЗАД</a>
+        </div>
+
+
+    <center>
+
+        <h1 class="p"><p><b>Пользовательский словарь</b></p></h1>
+        <div class="tabwidth">
+            <div style="overflow:auto; height:500px">
+                <form id="wordForm" method="post">
+<input type="hidden" name="dictionaryId" value="27">
+<table border="0" cellpadding="5" cellspacing="10">
+    <tbody>                <tr>
+                    <td colspan="2" width="25%" class="rollover tleft" bgcolor="#D3EDF6">
+                        <label>
+                            <input type="checkbox" id="select-all">
+                            Выбрать все 
+                        </label>
+                    </td>
+                    <td width="25%" id="deleteWords" class="rollover tright" bgcolor="#D3EDF6">
+                        <center>удалить</center>
+                    </td>
+                </tr>
+<tr class="js-select-tr">
+                    <td width="25%"><label><input type="checkbox" name="word_27">new</label></td>
+                    <td width="25%"> <center>Новый</center></td>
+                    <td width="25%"> <center>Изучается 35%</center></td>
+                </tr>
+<tr class="js-select-tr">
+                    <td width="25%"><label><input type="checkbox" name="word_30">how</label></td>
+                    <td width="25%"> <center>Сколько</center></td>
+                    <td width="25%"> <center>Изучается 17%</center></td>
+                </tr>
+<tr class="js-select-tr">
+                    <td width="25%"><label><input type="checkbox" name="word_29">fake</label></td>
+                    <td width="25%"> <center>мошеничать</center></td>
+                    <td width="25%"> <center>Изучено 97%</center></td>
+                </tr>
+<tr class="js-select-tr">
+                    <td width="25%"><label><input type="checkbox" name="word_28">old</label></td>
+                    <td width="25%"> <center>старый</center></td>
+                    <td width="25%"> <center>Изучается 30%</center></td>
+                </tr>
+<tr class="js-select-tr">
+                    <td width="25%" class="nleft"><label><input type="checkbox" name="word_31">are</label></td>
+                    <td width="25%"> <center>есть</center></td>
+                    <td width="25%" class="nright"> <center>Изучено 100%</center></td>
+                </tr>
+        </tbody>
+    </table>
+</form>
+
+
+                <p></p>
+
+                <form id="dictionaryForm" method="get" action="http://localhost:8084/WordFitness/Translater">
+                    <input type="hidden" name="dictionaryId" value="27">
+
+                </form>
+                <button type="submit" class="button3" form="dictionaryForm">Добавить</button>
+                <button type="submit" form="wordForm" class="button3" formaction="/WordFitness/LearningMode" name="action" value="learnWords">Учить</button>
+                <p></p>
+            </div>
+        </div>
+    </center>
+
+                  
+</body></html>
