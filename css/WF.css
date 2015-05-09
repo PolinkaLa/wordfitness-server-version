@@ -277,6 +277,9 @@ h1.p {
 	font-size: 2em;
  	text-shadow: 2px 1px black;
  	color: #FFFFFF;
+	/* отступ и выравнивание заголовка, для всех страниц*/
+	padding: 10;
+	text-align: center;
 }
 
 
@@ -284,7 +287,10 @@ h1.p {
 table {
 	table-layout: auto; /* ‘иксированна¤ ширина ¤чеек */
 	width: 100%; /* Ўирина таблицы */
-	
+	/* следующие три строки для стиля таблиц, для всех страниц*/
+	border:0;
+	border-spacing: 10;
+	border-collapse: 5;
 }
 
 .close {
@@ -459,6 +465,7 @@ div#question{
 
 .tabwidth {
 	width: 50%; /* ?ширина таблицы */
+	margin: 0 auto;
 }
 
 .navig_point{
@@ -516,4 +523,13 @@ label {
 {
     visibility: hidden;
     position: absolute;
+}
+/* для выравнивания по центру*/
+.middle {
+text-align: center;
+}
+/* для таблицы на страницы инструкция*/
+.table_instruct {
+	width: 60%; 
+	margin: 0 auto;
 }
