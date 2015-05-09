@@ -131,6 +131,7 @@ border-radius: 10px;
   	background: linear-gradient(#F3AE0F, #E38916) #E38916;
   	transition: 0.2s;
 	margin: 15px; /* добавила для отступа от таблиц, место <p>*/
+	margin-bottom: 0;
 
 }
 
