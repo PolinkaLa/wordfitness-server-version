@@ -279,7 +279,7 @@ h1.p {
  	text-shadow: 2px 1px black;
  	color: #FFFFFF;
 	/* отступ и выравнивание заголовка, для всех страниц*/
-	padding: 10;
+	padding: 10px;
 	text-align: center;
 }
 
