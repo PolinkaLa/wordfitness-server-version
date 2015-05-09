@@ -47,14 +47,14 @@
         </div>
 
 
-    <center>
 
-        <h1 class="p"><p><b>Пользовательский словарь</b></p></h1>
+        <h1 class="p">Пользовательский словарь</h1>
         <div class="tabwidth">
             <div style="overflow:auto; height:500px">
                 <form id="wordForm" method="post">
 <input type="hidden" name="dictionaryId" value="27">
-<table border="0" cellpadding="5" cellspacing="10">
+
+<table>
     <tbody>                <tr>
                     <td colspan="2" width="25%" class="rollover tleft" bgcolor="#D3EDF6">
                         <label>
@@ -62,52 +62,53 @@
                             Выбрать все 
                         </label>
                     </td>
-                    <td width="25%" id="deleteWords" class="rollover tright" bgcolor="#D3EDF6">
-                        <center>удалить</center>
+                    <td width="25%" id="deleteWords" class="rollover tright middle" bgcolor="#D3EDF6">
+                        Удалить
                     </td>
                 </tr>
 <tr class="js-select-tr">
-                    <td width="25%"><label><input type="checkbox" name="word_27">new</label></td>
-                    <td width="25%"> <center>Новый</center></td>
-                    <td width="25%"> <center>Изучается 35%</center></td>
+                    <td width="25%"><label><input type="checkbox" class="checkbox-bg" name="word_27">new</label></td>
+                    <td class= "middle" width="25%"> Новый</td>
+                    <td class= "middle" width="25%"> Изучается 35%</td>
                 </tr>
 <tr class="js-select-tr">
-                    <td width="25%"><label><input type="checkbox" name="word_30">how</label></td>
-                    <td width="25%"> <center>Сколько</center></td>
-                    <td width="25%"> <center>Изучается 17%</center></td>
+                    <td width="25%"><label><input type="checkbox" class="checkbox-bg" name="word_30">how</label></td>
+                    <td class= "middle" width="25%"> Сколько</td>
+                    <td class= "middle" width="25%"> Изучается 17%</td>
                 </tr>
 <tr class="js-select-tr">
-                    <td width="25%"><label><input type="checkbox" name="word_29">fake</label></td>
-                    <td width="25%"> <center>мошеничать</center></td>
-                    <td width="25%"> <center>Изучено 97%</center></td>
+                    <td width="25%"><label><input type="checkbox" class="checkbox-bg" name="word_29">fake</label></td>
+                    <td class= "middle" width="25%"> мошеничать</td>
+                    <td class= "middle" width="25%"> Изучено 97%</td>
                 </tr>
 <tr class="js-select-tr">
-                    <td width="25%"><label><input type="checkbox" name="word_28">old</label></td>
-                    <td width="25%"> <center>старый</center></td>
-                    <td width="25%"> <center>Изучается 30%</center></td>
+                    <td width="25%"><label><input type="checkbox" class="checkbox-bg" name="word_28">old</label></td>
+                    <td class= "middle" width="25%"> старый</td>
+                    <td class= "middle" width="25%"> Изучается 30%</td>
                 </tr>
 <tr class="js-select-tr">
-                    <td width="25%" class="nleft"><label><input type="checkbox" name="word_31">are</label></td>
-                    <td width="25%"> <center>есть</center></td>
-                    <td width="25%" class="nright"> <center>Изучено 100%</center></td>
+                    <td width="25%" class="nleft"><label><input type="checkbox" class="checkbox-bg" name="word_31">are</label></td>
+                    <td class= "middle" width="25%"> есть</td>
+                    <td width="25%" class="nright middle"> Изучено 100%</td>
                 </tr>
         </tbody>
     </table>
 </form>
 
 
-                <p></p>
+            
 
                 <form id="dictionaryForm" method="get" action="http://localhost:8084/WordFitness/Translater">
                     <input type="hidden" name="dictionaryId" value="27">
 
                 </form>
-                <button type="submit" class="button3" form="dictionaryForm">Добавить</button>
+				<div class="middle">
+                <button type="submit" class="button3 button_padding" form="dictionaryForm">Добавить</button>
                 <button type="submit" form="wordForm" class="button3" formaction="/WordFitness/LearningMode" name="action" value="learnWords">Учить</button>
-                <p></p>
+                </div>
             </div>
         </div>
-    </center>
+
 
                   
 </body></html>

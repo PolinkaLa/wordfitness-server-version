@@ -146,20 +146,27 @@ $(document).ready(function () {
     });
 
 //label
-    $("input").on('change', function () {
-        var tr = $('.js-select-tr');
-        if (this.checked)
-            $(this).closest('tr').addClass('opened');
-        else
-            $(this).closest('tr').removeClass('opened');
-    });
+   var selectTr = $(".js-select-tr"),
+		selectCheckboxs = function(thisVal) {
+			if(thisVal.checked) 
+				$(thisVal).closest('tr').addClass('opened');
+			else 
+				$(thisVal).closest('tr').removeClass('opened');
+		};
+
+	$(".checkbox-bg").on('change', function() {
+		selectCheckboxs(this);
+	});
 
     $("#select-all").on('change', function () {
         if (this.checked)
-            $(".js-select-tr").addClass('opened');
+            selectTr.addClass('opened');
         else
-            $(".js-select-tr").removeClass('opened');
+            selectTr.removeClass('opened');
     });
+	selectTr.find(".checkbox-bg").each( function() {
+		selectCheckboxs(this);
+	});
 
     $("#select-all").on('click', function () {
         var o = this.form.elements;
