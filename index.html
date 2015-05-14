@@ -19,71 +19,76 @@
             </div>
         </a>
         <div class="line"></div>
-    <center>
-        <div id="map"></div>
-    </center>
+
+			<div id="map"></div>
+
 
     <div class="popup1">
         <form>
-            <center>
-                <a class="close" href="./index_files/index.html"><img src="./index_files/close.png" alt="Закрытие"></a>
-                <p><b>Авторизуйся на WordFitness!</b><br><br>
 
-                    <input type="email" name="mail" placeholder="Email" autofocus="" required=""><br><br>
-                    <input type="password" name="password" placeholder="Пароль" required=""><br>
-                    <a href="http://localhost:8084/WordFitness/#" class="recovery"> Забыли пароль?</a> 
-                    <br><br><br>
+                <a class="close" href="./index_files/index.html"><img src="./index_files/close.png" alt="Закрытие"></a>
+                <p class="popup-title">Авторизуйся на WordFitness!</p>
+				<p>
+
+                    <input type="email" name="mail" placeholder="Email" autofocus required="" class="popup-line">
+                    <input type="password" name="password" placeholder="Пароль" required class="popup-line">
+                    <a href="http://localhost:8084/WordFitness/#" class="recovery popup-line"> Забыли пароль?</a> 
+                   
                     
                 <button type="submit" class="button1" name="action" value="login">ВОЙТИ</button>
 
                 </p>
-            </center>
+
         </form>
     </div>
     <div class="parent_popup2"></div>
 
     <div class="popup2">
         <a class="close" href="./index_files/index.html"><img src="./index_files/close.png" alt="Закрытие"></a>
-        <center>
-            <p>
-                <b>Зарегистрируйся на на WordFitness бесплатно!</b><br><br>
-            </p><form method="POST">
+
+            <p class="popup-title">
+                Зарегистрируйся на на WordFitness бесплатно!</p>
+			
+            <form method="POST" class="clearfix">
+				<div class="part-half">
                 <input type="hidden" name="action" value="registration">
                 <input type="text" name="SecondName" placeholder="Фамилия" required="" autofocus="">
-                <input type="text" name="Name" placeholder="Имя" required=""><br><br>
                 <input type="email" name="EMail" placeholder="Email" required="">
-                <input type="tel" name="Phone" placeholder="Phone"><br><br>
                 <input type="password" name="Password" placeholder="Пароль" required="">
-                <input type="password" placeholder="Повтори пароль" required=""><br><br>
-                Укажи дату рождения
-                <input type="date"><br><br><br>
+				<label class="popup-label">Укажи дату рождения</label>
+				</div>
+				<div class="part-half">
+				<input type="text" name="Name" placeholder="Имя" required="">
+				<input type="tel" name="Phone" placeholder="Phone">
+                <input type="password" placeholder="Повтори пароль" required="">
+				<input type="date">
+				</div>
+                
+                <div class="column">
                 <button class="button2">Зарегистрироваться</button>
+				</div>
             </form>
-            <p></p>
-        </center>
+       
+
     </div>
     <div class="parent_popup2"></div>
 
     <div class="recovery-password">
-        <center>
+
             <a class="close" href="http://localhost:8084/WordFitness/WordFitness.html">
                 <img src="./index_files/close.png" alt="Çàêðûòèå"></a>
-            <p> <b>Введите Ваш email:</b>
-                <br>
-                <br>
-                <input type="email" placeholder="Email" autofocus="" required="">
-                <br>
-                <br>
-                На указанный почтовый ящик будет выслано письмо с дальнейшими инструкциями
-                <br>
-                <br>
-
-            </p>
+            <p class="popup-title">Введите Ваш email:</p>
+                
+                <input type="email" placeholder="Email" autofocus="" required="" class="popup-line">
+              
+                <p class="recovery-text">На указанный почтовый ящик будет выслано письмо с дальнейшими инструкциями</p>
+             
+            
 
             <button class="button1">Восстановить</button>
 
-            <p></p>
-        </center>
+          
+
     </div>
 
 

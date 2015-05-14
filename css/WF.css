@@ -52,9 +52,9 @@ a.button-registration {
 .popup1 {
   background-color: #FFFFFF;
 
-  height: 260px;
+  height: 230px;
   position: fixed;
-  top: 100px;
+  top: 200px;
   left: 40%;
   color: #000;
   width: 300px;
@@ -91,12 +91,13 @@ border-radius: 10px;
 .popup2 {
   background-color: #FFFFFF;
 
-  height: 320px;
+  height: 270px;
   position: fixed;
-  top: 100px;
-  left: 27%;
+  top: 200px;
+  left: 50%;
+  margin-left: -250px;
   color: #000;
-  width: 600px;
+  width: 500px;
   z-index: 100;
   border-radius: 10px;
 }
@@ -188,7 +189,7 @@ div#logo {
 	margin-top: 20px;
 }
 div#map {
-	
+	margin:0 auto;
 	width:936px;
 	height:533px; 
 	background: url(../img/map.png) no-repeat;
@@ -372,6 +373,12 @@ div#question{
 
 
 /*plonina start*/
+.popup1, .popup2, .recovery-password {
+	padding: 15px;
+	text-align: center;
+}
+.popup-line {margin-bottom:10px;}
+.popup-title {font-weight: bold;}
 .popup1, .popup2, .parent_popup2, .parent_popup_text, .recovery-password {
     display: none;
 }
@@ -460,10 +467,14 @@ div#question{
   font-weight: bold;
 }
 .hidden {display: none;}
+
+.part-half {width:50%; float: left;}
+.part-half > * {margin-bottom: 10px; width: 90%;} 
+.clearfix {overflow:hidden;}
 /*plonina end*/
 
-
-
+.popup-label {margin-bottom: 40px; text-align: right;}
+.column {float:left; width:100%;}
 
 .tabwidth {
 	width: 50%; /* ?ширина таблицы */
@@ -493,19 +504,22 @@ td {
     overflow: hidden; /* Обрезаем все, что не помещается в область */
     text-overflow: ellipsis; /* Добавляем многоточие */
 }
-
+.recovery-text {display:block; margin:0; margin-bottom: 20px;}
 .recovery /* for open form recovery-password */
 {
 	font-size: 13px;
   	text-decoration: none;
 	font-style: italic;
+	display: block;
+	line-height: 40px;
 }  
+.recovery:hover {text-decoration: underline;}
 .recovery-password /* form recovery-password */
 {
   background-color: #FFFFFF;
-  height: 260px;
+  height: 230px;
   position: fixed;
-  top: 100px;
+  top: 200px;
   left: 40%;
   color: #000;
   width: 300px;
