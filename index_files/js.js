@@ -180,4 +180,75 @@ $(document).ready(function () {
     $("#addDictionaryButton").on('click', function () {
         $("#addDictionaryForm").submit();
     });
+	
+	// translator page
+	if ( $('table').is('#js-translator-page') ) {
+		
+		var data = {
+                    "translateList": ["trsnlat888e1", "trsnlate2", "trsnlate3"],
+                    "dictionaryList": [["nameDict1", "id1234"], ["nameDict2", "id123434"], ["nameDict3", "id1234sd"], ["nameDict4", "id12sad4"]]
+        };
+
+		
+		function interval() {
+
+			var temp = $('#js-input-word').val();
+			console.log(temp);
+			
+			if (data.translateList.length != 0) {
+				$('#js-block-word').empty();
+                for (var i in data.translateList) {
+					$('#js-block-word').append('<tr><td class="rollover middle"><h4>' + data["translateList"][i] + '</h4></td></tr>');
+                };
+				$('#js-select').empty();
+                for (var i in data.dictionaryList) {
+                    $('#js-select').append('<option>' + data["dictionaryList"][i][0] + '</option>');
+				};
+            }
+            else {
+                $('#js-block-word').append('<tr><td class="rollover middle"><h4>Перевод выбранного слова не найден</h4></td></tr>');
+                $('#js-select').empty();
+                for (var i in data.dictionaryList) {
+                    $('#js-select').append('<option>' + data["dictionaryList"][i][0] + '</option>');
+				};
+			}
+			
+		}
+		
+		var timerId = null;
+		var timer = 500;
+		
+		$('#js-input-word').keypress(function(){
+			if(timerId !== null)
+			{
+				clearTimeout(timerId);
+				timerId = setTimeout(interval, timer);
+			}
+			else
+			{
+				timerId = setTimeout(interval, timer);
+			}
+		});
+		
+		
+	
+	}
+	
+	$('body').on('click', '#js-block-word tr', function (e) {
+		var tr = $(this).text();
+		console.log(tr);
+		$('#js-output-word').append(tr+"; ");
+
+
+//  $.ajax({
+//      type: "POST",
+//      url: "andrey",
+//      data: idDictionary+word+translate,
+//      success: function(data){ tooltip.hide('500'); }
+//  });
+
+    });
+
+	
+	
 });

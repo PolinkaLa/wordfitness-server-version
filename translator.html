@@ -2,6 +2,8 @@
 <head>
 	<title>Переводчик</title>
 	<link href="css/WF.css" rel="stylesheet" />
+	<script src="./index_files/jquery-1.10.1.min.js"></script>
+<script src="./index_files/js.js"></script>
 
 </head>
 <form>
@@ -37,22 +39,20 @@
 
 	<h1 class="p">Переводчик</h1>
 <div class="tabwidth">
-<table>
+<table id="js-translator-page">
 
    
       
-      	<tr><td class="bcenter"><textarea class="size" autofocus cols="75"  placeholder="Введите незнакомое слово"></textarea></td></tr>
-	<tr><td class="rollover middle"><h4>Вариант перевода 1</h4></td></tr>
-	<tr><td class="rollover middle"><h4>Вариант перевода 2</h4></td></tr>
-	<tr><td class="rollover middle"><h4>...</h4></td></tr>
-	<tr><td class="rollover middle"><h4>Вариант перевода n</h4></td></tr>
-	<tr><td class="middle"><select>
+    <tr><td class="bcenter"><textarea class="size" id="js-input-word" autofocus cols="75"  placeholder="Введите незнакомое слово"></textarea></td></tr>
+	<tbody id="js-block-word">	
+	</tbody>
+	<tr><td class="middle"><select id="js-select">
  				 <option>Словарь 1</option>
  				 <option>Словарь 2</option>
 				 <option>...</option>
 				 <option>Словарь n</option>
 	</select></td></tr>
-	<tr><td class="ncenter"><textarea class="size" cols="75" placeholder="Текст перевода ..."></textarea></td></tr>
+	<tr><td class="ncenter"><textarea class="size" cols="75" id="js-output-word" placeholder="Текст перевода ..."></textarea></td></tr>
 	</table>
 	</div>
 <div class="middle">
